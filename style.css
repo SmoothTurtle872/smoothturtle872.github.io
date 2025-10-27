@@ -39,14 +39,6 @@ h1 {
     z-index: -1;
 }
 
-.grid-cell{
-    width: 50px;
-    height: 50px;
-    border: dashed var(--linecol);
-    border-right: none;
-    border-bottom: none;
-}
-
 #link-grid{
     z-index: 1;
     width: 90vw;
@@ -71,4 +63,13 @@ h1 {
 .no-link{
     color: white;
     text-decoration: none;
+}
+
+svg rect{
+    stroke-dashoffset: 10;
+    stroke-linecap: round;
+    stroke: var(--linecol);
+    stroke-dasharray: 20 30;
+    stroke-width: 3;
+    fill: none;
 }
