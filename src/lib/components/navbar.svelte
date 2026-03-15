@@ -5,7 +5,7 @@
 <ul>
     {#each options as option}
         <li class={selected === option ? "selected" : ""}>
-            <button>{option}</button>
+            <a href={option}>{option}</a>
         </li>
     {/each}
 </ul>
@@ -16,20 +16,27 @@
         width: 100%;
         list-style: none;
         display: flex;
-        li button {
+        position: sticky;
+        height: 40px;
+        li a {
             padding: 10px;
             background-color: #00000000;
             border: none;
             color: #e9f8f9;
+            text-decoration: none;
         }
-        :hover {
+        li {
+            align-content: center;
+            transition: 500ms;
+        }
+        li:hover {
             background-color: #ffffff55;
+            transition: 500ms;
         }
-        position: sticky;
     }
     .selected {
         background-color: #c0eef2;
-        button {
+        a {
             color: #181823;
         }
     }

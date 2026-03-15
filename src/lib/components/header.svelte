@@ -1,9 +1,17 @@
 <script>
     import Navbar from "./navbar.svelte";
 
-    let { page } = $props();
+    let { page, tagline = "Welcome to My Website" } = $props();
 </script>
 
-<h1>SmoothTurtle872.github.io/{page}</h1>
-<strong>Welcome to my website</strong>
-<Navbar options={["home", "about", "projects"]} selected={page} />
+<div>
+    <h1>SmoothTurtle872.github.io/{page}</h1>
+    <strong>{tagline}</strong>
+    <Navbar options={["home", "about", "projects"]} selected={page} />
+</div>
+
+<style>
+    div {
+        text-align: center;
+    }
+</style>

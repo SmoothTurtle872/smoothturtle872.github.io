@@ -1,18 +1,7 @@
 <script>
     import Header from "../../lib/components/header.svelte";
+    import Footer from "../../lib/components/footer.svelte";
 </script>
 
-<Header page="about" />
-
-<p>
-    Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
-    documentation
-</p>
-
-<style>
-    :root {
-        background-color: #181823;
-        color: #e9f8f9;
-        overflow: hidden;
-    }
-</style>
+<Header page="about" tagline="About Me" />
+<Footer />
