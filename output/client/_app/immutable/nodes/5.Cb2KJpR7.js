@@ -1,0 +1,2 @@
+import"../chunks/DsnmJJEf.js";import{k as a,n as i}from"../chunks/BeFerO9a.js";import{a as n,f as s}from"../chunks/CgR_MMky.js";import{H as p,F as m}from"../chunks/DfsX7DXd.js";var c=s(`<!> <div class="svelte-rqn88j"><h1>THIS PAGE IS STILL UNDER CONSTRUCTION</h1> <p>Sorry for the inconvinience, but check the footer for links to my github
+        and itch.io page</p></div> <!>`,1);function g(e){var o=c(),r=a(o);p(r,{page:"projects",tagline:"My Projects"});var t=i(r,4);m(t),n(e,o)}export{g as component};

@@ -1,0 +1,14 @@
+import "clsx";
+import { H as Header, F as Footer } from "../../../chunks/footer.js";
+function _page($$renderer) {
+  Header($$renderer, { page: "about", tagline: "About Me" });
+  $$renderer.push(`<!----> <div class="svelte-cwls5q"><h2>Who am I?</h2> <p>I am an Aussie programmer who is just making some little projects,
+        whether it be tools, games, libraries or this very website, I'm just
+        trying to learn more about programming.</p> <h2>What languages do I use?</h2> <p>Quite a few, some projects are in python, others in rust. This website
+        is written in svelte.</p></div> `);
+  Footer($$renderer);
+  $$renderer.push(`<!---->`);
+}
+export {
+  _page as default
+};
